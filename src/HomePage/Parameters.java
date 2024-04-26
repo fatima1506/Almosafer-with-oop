@@ -17,6 +17,8 @@ public class Parameters {
 	 String ExpectedLanguage = "en";
 	 String ExpectedCurrency ="SAR";
 	 String expectednumber = "+966554400000";
+
+
 	Assertion Myassert = new Assertion(); 
 
 }
