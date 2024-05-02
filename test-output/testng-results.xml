@@ -1,49 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-27T00:16:24 GST" name="Default suite" finished-at="2024-04-27T00:16:27 GST" duration-ms="2355">
+  <suite started-at="2024-05-02T21:28:46 GST" name="Default suite" finished-at="2024-05-02T21:29:12 GST" duration-ms="25395">
     <groups>
     </groups>
-    <test started-at="2024-04-27T00:16:24 GST" name="Default test" finished-at="2024-04-27T00:16:27 GST" duration-ms="2355">
-      <class name="HomePage.HomePagetestcases">
-        <test-method is-config="true" signature="MySetup()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:24 GST" name="MySetup" finished-at="2024-04-27T00:16:26 GST" duration-ms="1950" status="PASS">
+    <test started-at="2024-05-02T21:28:46 GST" name="Default test" finished-at="2024-05-02T21:29:12 GST" duration-ms="25395">
+      <class name="HotelSearchTest.BookingHotelTestcases">
+        <test-method is-config="true" signature="Mysetup()[pri:0, instance:HotelSearchTest.BookingHotelTestcases@767e20cf]" started-at="2024-05-02T21:28:46 GST" name="Mysetup" finished-at="2024-05-02T21:28:48 GST" duration-ms="1869" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MySetup -->
-        <test-method signature="CheckTheBottonPayAvailable()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:26 GST" name="CheckTheBottonPayAvailable" finished-at="2024-04-27T00:16:26 GST" duration-ms="63" status="PASS">
+        </test-method> <!-- Mysetup -->
+        <test-method signature="HotelSearchTab()[pri:1, instance:HotelSearchTest.BookingHotelTestcases@767e20cf]" started-at="2024-05-02T21:28:48 GST" name="HotelSearchTab" finished-at="2024-05-02T21:28:49 GST" duration-ms="869" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckTheBottonPayAvailable -->
-        <test-method signature="CheckTheBottonVisaAvailable()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:26 GST" name="CheckTheBottonVisaAvailable" finished-at="2024-04-27T00:16:26 GST" duration-ms="46" status="PASS">
+        </test-method> <!-- HotelSearchTab -->
+        <test-method signature="RandomlyVisitorSelected()[pri:2, instance:HotelSearchTest.BookingHotelTestcases@767e20cf]" started-at="2024-05-02T21:28:49 GST" name="RandomlyVisitorSelected" finished-at="2024-05-02T21:28:52 GST" duration-ms="3427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckTheBottonVisaAvailable -->
-        <test-method signature="CheckTheDefaultCurruncy()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:26 GST" name="CheckTheDefaultCurruncy" finished-at="2024-04-27T00:16:27 GST" duration-ms="47" status="PASS">
+        </test-method> <!-- RandomlyVisitorSelected -->
+        <test-method signature="ResultPage()[pri:3, instance:HotelSearchTest.BookingHotelTestcases@767e20cf]" started-at="2024-05-02T21:28:52 GST" name="ResultPage" finished-at="2024-05-02T21:29:04 GST" duration-ms="11357" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckTheDefaultCurruncy -->
-        <test-method signature="CheckTheDefaultLanguageisEnglish()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:27 GST" name="CheckTheDefaultLanguageisEnglish" finished-at="2024-04-27T00:16:27 GST" duration-ms="43" status="PASS">
+        </test-method> <!-- ResultPage -->
+        <test-method signature="SortingByLowestPrice()[pri:4, instance:HotelSearchTest.BookingHotelTestcases@767e20cf]" started-at="2024-05-02T21:29:04 GST" name="SortingByLowestPrice" finished-at="2024-05-02T21:29:12 GST" duration-ms="7831" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckTheDefaultLanguageisEnglish -->
-        <test-method signature="CheckTheDefaultNumber()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:27 GST" name="CheckTheDefaultNumber" finished-at="2024-04-27T00:16:27 GST" duration-ms="34" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckTheDefaultNumber -->
-        <test-method signature="CheckTheHotelTapIsNotSelectedByDefault()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:27 GST" name="CheckTheHotelTapIsNotSelectedByDefault" finished-at="2024-04-27T00:16:27 GST" duration-ms="36" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckTheHotelTapIsNotSelectedByDefault -->
-        <test-method signature="FlightDeparture()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:27 GST" name="FlightDeparture" finished-at="2024-04-27T00:16:27 GST" duration-ms="40" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FlightDeparture -->
-        <test-method signature="FlightReturn()[pri:0, instance:HomePage.HomePagetestcases@340b9973]" started-at="2024-04-27T00:16:27 GST" name="FlightReturn" finished-at="2024-04-27T00:16:27 GST" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FlightReturn -->
-      </class> <!-- HomePage.HomePagetestcases -->
+        </test-method> <!-- SortingByLowestPrice -->
+      </class> <!-- HotelSearchTest.BookingHotelTestcases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

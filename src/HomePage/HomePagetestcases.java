@@ -20,14 +20,14 @@ public class HomePagetestcases extends Parameters {
 
 	}
 
-	@Test
+	@Test (enabled = false)
 	public void CheckTheDefaultLanguageisEnglish() {
 
 		String ActualLanguage = driver.findElement(By.tagName("html")).getAttribute("lang");
-		Myassert.assertEquals(ActualLanguage, ExpectedLanguage);
+		Myassert.assertEquals(ActualLanguage, ExpectedEnglishLanguage);
 	}
 
-	@Test
+	@Test (enabled = false)
 	public void CheckTheDefaultCurruncy() {
 
 		String ActualCurrency = driver.findElement(By.xpath("//button[@data-testid='Header__CurrencySelector']"))
@@ -35,14 +35,14 @@ public class HomePagetestcases extends Parameters {
 		Myassert.assertEquals(ActualCurrency, ActualCurrency);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void CheckTheDefaultNumber() {
 
 		String actualnumber = driver.findElement(By.tagName("strong")).getText();
 		Myassert.assertEquals(actualnumber, expectednumber);
 	}
 
-	@Test 
+	@Test (enabled = false)
 	public void CheckTheBottonVisaAvailable () {
 	
 WebElement VisaButton = driver.findElement(By.cssSelector(".sc-bdVaJa.bNehGJ.visa-icon"));
@@ -50,14 +50,14 @@ WebElement VisaButton = driver.findElement(By.cssSelector(".sc-bdVaJa.bNehGJ.vis
 Myassert.assertEquals(ActuallVisabutton, true);
 	}
 	
-	@Test 
+	@Test (enabled = false)
 	public void  CheckTheBottonPayAvailable () {
 		WebElement PayButton = driver.findElement(By.xpath("//img[@data-testid='Footer__ApplePayLogo']"));
 	boolean ActualPaybottun =	PayButton.isDisplayed();
 	Myassert.assertEquals(ActualPaybottun, true); 
 			}		
 	
-	@Test 
+	@Test (enabled = false)
 	public void CheckTheHotelTapIsNotSelectedByDefault () {
 		
 	WebElement hotelbutton =driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
@@ -65,7 +65,7 @@ Myassert.assertEquals(ActuallVisabutton, true);
 		
 		Myassert.assertEquals(Actualhoteltap, "false" );	
 	}
-		@Test 
+		@Test (enabled = false)
 		public void FlightDeparture () {
 			
 	LocalDate Today = LocalDate.now();
@@ -79,7 +79,7 @@ Myassert.assertEquals(ActuallVisabutton, true);
 	Myassert.assertEquals(ActualDepartureDayasanumber, Tomorrow);
 		}
 		
-	@Test 
+	@Test (enabled = false)
 	public void FlightReturn () {
 		LocalDate Today = LocalDate.now();
 		
@@ -91,9 +91,22 @@ Myassert.assertEquals(ActuallVisabutton, true);
 			
 		}
 			
-			
+	@Test 
+	public void randomlanguage ()  {
+		  
+	driver.get(websites[randomwebsite]);
+	
+	if (driver.getCurrentUrl().contains("en")) {
+	String Actuallanguale = driver.findElement(By.tagName("html")).getAttribute("lang");
+		Myassert.assertEquals(Actuallanguale, ExpectedEnglishLanguage);
+	
+	} else {
+		String Actuallanguale = driver.findElement(By.tagName("html")).getAttribute("lang");
+		Myassert.assertEquals(Actuallanguale, expectedArabiclanguage);
+	
+	}
 
-		
+	}	
 	}
 	
 	

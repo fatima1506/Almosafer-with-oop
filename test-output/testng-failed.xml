@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomePage.HomePagetestcases">
+      <class name="HotelSearchTest.BookingHotelTestcases">
         <methods>
-          <include name="MySetup"/>
-          <include name="FlightDepartureAndReturn"/>
+          <include name="Mysetup"/>
+          <include name="ResultPage"/>
+          <include name="SortingByLowestPrice"/>
         </methods>
-      </class> <!-- HomePage.HomePagetestcases -->
+      </class> <!-- HotelSearchTest.BookingHotelTestcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
